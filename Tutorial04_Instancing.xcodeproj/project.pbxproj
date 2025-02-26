@@ -1,0 +1,1246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		26AEADC49D1AC35FC2218076 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A85D3CD26AA64E84A9359793 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				6BC5835E8EB7198F1A915F1A /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		82BDC4F494187AF1C20ED9D0 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8FB5BF223DD9407BAC6B4A42 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				09A6FF161C544C5BBA77CBF5 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		8596AC8F8E411541DCDAE46C /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5499FC28D42B42E4AF74A05B /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				B158B5F553F94D5C9C65D713 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		BEF614FA847ED6605442F7B5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0FC660D8D23A43A3B38DBD76 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				1F218102B97B2FC56B6EC36F /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				0D5616841314442DB7CE1359 /* PBXTargetDependency */,
+				BF40F66FF80D4D638C1519F4 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		080C87D02CC14764B27B62BC /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/vulkan-logo.png */ = {isa = PBXBuildFile; fileRef = BBD24568BD424D589459083B /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/vulkan-logo.png */; };
+		0A8825CC1F5C4688857F6169 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.h */ = {isa = PBXBuildFile; fileRef = 2F7ECE51AB8E49E8A5FD6664 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.h */; };
+		1A05FD81C1254ED582FDD3B1 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.mm */ = {isa = PBXBuildFile; fileRef = 372B725DD46A48D9AC550937 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.mm */; };
+		231F565288B94E32973E643A /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.h */ = {isa = PBXBuildFile; fileRef = 7F6AB0B736F641C98A7CE995 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.h */; };
+		257BE96DA94D419F82950316 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/opengl-logo.png */ = {isa = PBXBuildFile; fileRef = 8EA13F3844BA478CB3C7D4B9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/opengl-logo.png */; };
+		35E67881CF724DC7B177BA8A /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.cpp */ = {isa = PBXBuildFile; fileRef = 2788E8FC4B404C3EB9644699 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.cpp */; };
+		380F645247094296A0058612 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/main.m */ = {isa = PBXBuildFile; fileRef = 1426A7DDE1274C8780F5CF98 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/main.m */; };
+		3D9CE1706B1C465CA8EEEC99 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/AppIcon.appiconset/dg.icns */ = {isa = PBXBuildFile; fileRef = 92A007E8618E4BAF9D312EA3 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/AppIcon.appiconset/dg.icns */; };
+		40A99F50164B47AB80B4A9A5 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.m */ = {isa = PBXBuildFile; fileRef = 2826781B51854998B86A1283 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.m */; };
+		4E185A924F59492197EDC937 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.hpp */ = {isa = PBXBuildFile; fileRef = 5EEAD315171D4D50A9C88CD6 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.hpp */; };
+		547B88E2581C4AD38BAC2BE5 /* /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = F62C95AD77824F97B655185E /* /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist */; };
+		56096C93DAF0491092CF8D6F /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/metal-logo.png */ = {isa = PBXBuildFile; fileRef = AFED74E96D304C598D33AB3E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/metal-logo.png */; };
+		610815E5836A4183BBD269DD /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.h */ = {isa = PBXBuildFile; fileRef = D7AA3A0079CD4160971F6515 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.h */; };
+		629F4069680E4D749A5C8247 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/DGLogo.png */ = {isa = PBXBuildFile; fileRef = E58590E643C44EF8B4E65DD6 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/DGLogo.png */; };
+		7ED22BB7A4D14B769FFF385C /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = 76C5F85A700044D5AFB05512 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework */; };
+		822524B771AF4ADA84A2208E /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.psh */ = {isa = PBXBuildFile; fileRef = 7E87725932A743778A551659 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.psh */; };
+		8B0DD2E4F87D445CB10F166A /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.m */ = {isa = PBXBuildFile; fileRef = DA4F6AD703864E69A3F01DA9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.m */; };
+		8EA65DBC3239496981DD8C12 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/readme.md */ = {isa = PBXBuildFile; fileRef = 289A7BEFA88E4DBFB4452020 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/readme.md */; };
+		8FD48AC3EFAC47E091920FFF /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Base.lproj/Main.storyboard */ = {isa = PBXBuildFile; fileRef = 208B4992A6574BA48530E9A4 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Base.lproj/Main.storyboard */; };
+		955868C8168746CCBDF44E07 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.mm */ = {isa = PBXBuildFile; fileRef = 90FC5E02EFCC438DA65ECF0C /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.mm */; };
+		99CF371EFB25451B8DA9353C /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Metal.framework */ = {isa = PBXBuildFile; fileRef = ED557F40460B41E599DEA3F8 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Metal.framework */; };
+		9C1D418B25FF44B3B4780177 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.mm */ = {isa = PBXBuildFile; fileRef = 1902AFB5C37041C38F7ED0E4 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.mm */; };
+		A28063E971DB4A3F8B1D29A8 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.mm */ = {isa = PBXBuildFile; fileRef = 20963FCF399C495E8C7E552E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.mm */; };
+		A316EF55D6404D93921790C9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.vsh */ = {isa = PBXBuildFile; fileRef = A157DC198CA34678B8ACFEE1 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.vsh */; };
+		A5D83AD90FD34F25AAA3FE5A /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.h */ = {isa = PBXBuildFile; fileRef = 537B44CA5FA7499CA341972F /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.h */; };
+		A8EA7CF67FA14D46A823FE76 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 88365CDB7B764039B571FCF3 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeLists.txt */; };
+		AC6B98E8FEE9487C9EEF7858 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.h */ = {isa = PBXBuildFile; fileRef = 8CDFF9877DC945A8A29F8703 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.h */; };
+		B40EA3E3CCD14554A6FC2644 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.h */ = {isa = PBXBuildFile; fileRef = 5100241032DB4434980B3DB2 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.h */; };
+		BC0481859A624A73BEC4F839 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.h */ = {isa = PBXBuildFile; fileRef = 19721D2C55654B0CA1B7F91A /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.h */; };
+		C064399B9EAE4AE298B495F8 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.mm */ = {isa = PBXBuildFile; fileRef = 31A613F4B79F490690F8756C /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.mm */; };
+		C2A7F113C7794B6BABAE225A /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.hpp */ = {isa = PBXBuildFile; fileRef = 6C9ACCAFC2524F108B63E49D /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.hpp */; };
+		C5F1AE7F19FF4223AE5A2866 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AppKit.framework */ = {isa = PBXBuildFile; fileRef = A37BADFA37D84686AE1DA6B5 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AppKit.framework */; };
+		D2EB8E60C74D45768B859C13 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.h */ = {isa = PBXBuildFile; fileRef = 5C1EF9D1DF884F5D9584C16E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.h */; };
+		D54E800A43B048A997FFF325 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.mm */ = {isa = PBXBuildFile; fileRef = D04D0DC070054D41861C5076 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.mm */; };
+		D6011E8EBB744751B772F37B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = 3F6F3B838B0349A6AB9A741E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */; };
+		E265062F855E4948AAAAE71E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.mm */ = {isa = PBXBuildFile; fileRef = 312F461362E1403587B0C722 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.mm */; };
+		E4457314C01E44749A00BE7D /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.h */ = {isa = PBXBuildFile; fileRef = EC6050BBAC8F401F8CD9F87D /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.h */; };
+		EB4D080A23E64966BEF3A27D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXBuildFile; fileRef = 7D199AFBF6E94B8B99D98097 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreVideo.framework */; };
+		F96AAFBD853D417697090496 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.cpp */ = {isa = PBXBuildFile; fileRef = 62F3F72D7750429A954DB8A0 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		41C073B116A44B61A0C92ABA /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		6812AD1F47DA472EBEE92144 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		D77846D5D2954C38A9831895 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		E36E6AB7FDB24C979F2902A0 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0FB91A533E69479084A6988C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13B54A5D2A9449591BEA2D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26AEADC49D1AC35FC2218076;
+			remoteInfo = ZERO_CHECK;
+		};
+		14D6A71B15F44815A5A18368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13B54A5D2A9449591BEA2D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF614FA847ED6605442F7B5;
+			remoteInfo = ALL_BUILD;
+		};
+		15F0B587DC604AF6984E4B65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13B54A5D2A9449591BEA2D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26AEADC49D1AC35FC2218076;
+			remoteInfo = ZERO_CHECK;
+		};
+		59F01B84DA5142829687B20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13B54A5D2A9449591BEA2D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF614FA847ED6605442F7B5;
+			remoteInfo = ALL_BUILD;
+		};
+		FEE7EDEED1D94AB29A22CEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13B54A5D2A9449591BEA2D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8197567657AFA678F1A62A89;
+			remoteInfo = Tutorial04_Instancing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1426A7DDE1274C8780F5CF98 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = main.m; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/main.m; sourceTree = "<absolute>"; };
+		1902AFB5C37041C38F7ED0E4 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ModeSelectionViewController.mm; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.mm; sourceTree = "<absolute>"; };
+		19721D2C55654B0CA1B7F91A /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLView.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.h; sourceTree = "<absolute>"; };
+		208B4992A6574BA48530E9A4 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Base.lproj/Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Base.lproj/Main.storyboard; sourceTree = "<absolute>"; };
+		20963FCF399C495E8C7E552E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = MetalView.mm; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.mm; sourceTree = "<absolute>"; };
+		2788E8FC4B404C3EB9644699 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TexturedCube.cpp; path = /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.cpp; sourceTree = "<absolute>"; };
+		2826781B51854998B86A1283 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FullscreenWindow.m; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.m; sourceTree = "<absolute>"; };
+		289A7BEFA88E4DBFB4452020 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/readme.md */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = readme.md; path = readme.md; sourceTree = SOURCE_ROOT; };
+		2F7ECE51AB8E49E8A5FD6664 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AppDelegate.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.h; sourceTree = "<absolute>"; };
+		312F461362E1403587B0C722 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ViewController.mm; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.mm; sourceTree = "<absolute>"; };
+		31A613F4B79F490690F8756C /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ViewBase.mm; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.mm; sourceTree = "<absolute>"; };
+		372B725DD46A48D9AC550937 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = GLView.mm; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.mm; sourceTree = "<absolute>"; };
+		3F6F3B838B0349A6AB9A741E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		5100241032DB4434980B3DB2 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowController.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.h; sourceTree = "<absolute>"; };
+		537B44CA5FA7499CA341972F /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MetalView.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.h; sourceTree = "<absolute>"; };
+		5C1EF9D1DF884F5D9584C16E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FullscreenWindow.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.h; sourceTree = "<absolute>"; };
+		5EEAD315171D4D50A9C88CD6 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = TexturedCube.hpp; path = /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.hpp; sourceTree = "<absolute>"; };
+		62F3F72D7750429A954DB8A0 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Tutorial04_Instancing.cpp; path = src/Tutorial04_Instancing.cpp; sourceTree = SOURCE_ROOT; };
+		6C9ACCAFC2524F108B63E49D /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Tutorial04_Instancing.hpp; path = src/Tutorial04_Instancing.hpp; sourceTree = SOURCE_ROOT; };
+		76C5F85A700044D5AFB05512 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		7D199AFBF6E94B8B99D98097 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		7E87725932A743778A551659 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.psh */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = cube_inst.psh; path = assets/cube_inst.psh; sourceTree = SOURCE_ROOT; };
+		7F6AB0B736F641C98A7CE995 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ModeSelectionViewController.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.h; sourceTree = "<absolute>"; };
+		88365CDB7B764039B571FCF3 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8CDFF9877DC945A8A29F8703 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ViewController.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.h; sourceTree = "<absolute>"; };
+		8E62BBF817DF41A2AAA1849F /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8EA13F3844BA478CB3C7D4B9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/opengl-logo.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "opengl-logo.png"; path = "/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/opengl-logo.png"; sourceTree = "<absolute>"; };
+		90FC5E02EFCC438DA65ECF0C /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = MVKView.mm; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.mm; sourceTree = "<absolute>"; };
+		92A007E8618E4BAF9D312EA3 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/AppIcon.appiconset/dg.icns */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = dg.icns; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/AppIcon.appiconset/dg.icns; sourceTree = "<absolute>"; };
+		A157DC198CA34678B8ACFEE1 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.vsh */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = cube_inst.vsh; path = assets/cube_inst.vsh; sourceTree = SOURCE_ROOT; };
+		A37BADFA37D84686AE1DA6B5 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AppKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		AFED74E96D304C598D33AB3E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/metal-logo.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "metal-logo.png"; path = "/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/metal-logo.png"; sourceTree = "<absolute>"; };
+		BBD24568BD424D589459083B /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/vulkan-logo.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "vulkan-logo.png"; path = "/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/vulkan-logo.png"; sourceTree = "<absolute>"; };
+		D04D0DC070054D41861C5076 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = WindowController.mm; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.mm; sourceTree = "<absolute>"; };
+		D7AA3A0079CD4160971F6515 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MVKView.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.h; sourceTree = "<absolute>"; };
+		DA4F6AD703864E69A3F01DA9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AppDelegate.m; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.m; sourceTree = "<absolute>"; };
+		E58590E643C44EF8B4E65DD6 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/DGLogo.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = DGLogo.png; path = assets/DGLogo.png; sourceTree = SOURCE_ROOT; };
+		EC6050BBAC8F401F8CD9F87D /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ViewBase.h; path = /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.h; sourceTree = "<absolute>"; };
+		ED557F40460B41E599DEA3F8 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Metal.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
+		F62C95AD77824F97B655185E /* /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist; sourceTree = "<absolute>"; };
+		F86DD872AE234426A0220599 /* Tutorial04_Instancing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Tutorial04_Instancing; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFCFD04E1A441EEBB3352C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1112E200AA79446AB3DAFB2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76C5F85A700044D5AFB05512 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework */,
+				7D199AFBF6E94B8B99D98097 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreVideo.framework */,
+				ED557F40460B41E599DEA3F8 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Metal.framework */,
+				3F6F3B838B0349A6AB9A741E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */,
+				A37BADFA37D84686AE1DA6B5 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FF0AE9C6AA346DC9D8D9202 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E58590E643C44EF8B4E65DD6 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/DGLogo.png */,
+				7E87725932A743778A551659 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.psh */,
+				A157DC198CA34678B8ACFEE1 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.vsh */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		4F452BEED4554AB682DDA1DF = {
+			isa = PBXGroup;
+			children = (
+				52236B1985FB47A39804445F /* DiligentSamples */,
+				541F94D615BF41F3B9F03394 /* ALL_BUILD */,
+				988775BEDAAC4E1E857983DE /* Products */,
+				1112E200AA79446AB3DAFB2F /* Frameworks */,
+				B65F25E8BAD44FD39799DDD6 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		52236B1985FB47A39804445F /* DiligentSamples */ = {
+			isa = PBXGroup;
+			children = (
+				80849B6790354245B9D3F66A /* Tutorials */,
+			);
+			name = DiligentSamples;
+			sourceTree = "<group>";
+		};
+		541F94D615BF41F3B9F03394 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A49CF0ADA96646A18FAF1726 /* CMake Rules */,
+				8E62BBF817DF41A2AAA1849F /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5652F32E97274AAA967A90EF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2788E8FC4B404C3EB9644699 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.cpp */,
+				5EEAD315171D4D50A9C88CD6 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.hpp */,
+				62F3F72D7750429A954DB8A0 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.cpp */,
+				6C9ACCAFC2524F108B63E49D /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.hpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		5E0E4BEEFE1A4EBCB99B7B98 /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				2F7ECE51AB8E49E8A5FD6664 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.h */,
+				DA4F6AD703864E69A3F01DA9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.m */,
+				5C1EF9D1DF884F5D9584C16E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.h */,
+				2826781B51854998B86A1283 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.m */,
+				19721D2C55654B0CA1B7F91A /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.h */,
+				372B725DD46A48D9AC550937 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.mm */,
+				D7AA3A0079CD4160971F6515 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.h */,
+				90FC5E02EFCC438DA65ECF0C /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.mm */,
+				537B44CA5FA7499CA341972F /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.h */,
+				20963FCF399C495E8C7E552E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.mm */,
+				7F6AB0B736F641C98A7CE995 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.h */,
+				1902AFB5C37041C38F7ED0E4 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.mm */,
+				EC6050BBAC8F401F8CD9F87D /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.h */,
+				31A613F4B79F490690F8756C /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.mm */,
+				8CDFF9877DC945A8A29F8703 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.h */,
+				312F461362E1403587B0C722 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.mm */,
+				5100241032DB4434980B3DB2 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.h */,
+				D04D0DC070054D41861C5076 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.mm */,
+				1426A7DDE1274C8780F5CF98 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/main.m */,
+			);
+			name = MacOS;
+			sourceTree = "<group>";
+		};
+		7D963050C9B141BEB186B0BD /* Tutorial04_Instancing */ = {
+			isa = PBXGroup;
+			children = (
+				5652F32E97274AAA967A90EF /* src */,
+				5E0E4BEEFE1A4EBCB99B7B98 /* MacOS */,
+				3FF0AE9C6AA346DC9D8D9202 /* assets */,
+				F47B2EE2D29043348B858ADB /* Resources */,
+				88365CDB7B764039B571FCF3 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeLists.txt */,
+				289A7BEFA88E4DBFB4452020 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/readme.md */,
+			);
+			name = Tutorial04_Instancing;
+			sourceTree = "<group>";
+		};
+		80849B6790354245B9D3F66A /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				7D963050C9B141BEB186B0BD /* Tutorial04_Instancing */,
+			);
+			name = Tutorials;
+			sourceTree = "<group>";
+		};
+		988775BEDAAC4E1E857983DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F86DD872AE234426A0220599 /* Tutorial04_Instancing */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A49CF0ADA96646A18FAF1726 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B65F25E8BAD44FD39799DDD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F47B2EE2D29043348B858ADB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				208B4992A6574BA48530E9A4 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Base.lproj/Main.storyboard */,
+				92A007E8618E4BAF9D312EA3 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/AppIcon.appiconset/dg.icns */,
+				AFED74E96D304C598D33AB3E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/metal-logo.png */,
+				8EA13F3844BA478CB3C7D4B9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/opengl-logo.png */,
+				BBD24568BD424D589459083B /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/vulkan-logo.png */,
+				F62C95AD77824F97B655185E /* /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8197567657AFA678F1A62A89 /* Tutorial04_Instancing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16603D4F431F4ED8A7DA1B75 /* Build configuration list for PBXNativeTarget "Tutorial04_Instancing" */;
+			buildPhases = (
+				6CBBBFED1E194F6CB6D9FFA0 /* Resources */,
+				B6968767B1A7411EAB2B1F57 /* Sources */,
+				CEFCFD04E1A441EEBB3352C5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D41B4E2A869C47D1B9296517 /* PBXTargetDependency */,
+			);
+			name = Tutorial04_Instancing;
+			productName = Tutorial04_Instancing;
+			productReference = F86DD872AE234426A0220599 /* Tutorial04_Instancing */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D13B54A5D2A9449591BEA2D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1520;
+			};
+			buildConfigurationList = A8DBECDC0A5E45C29DA43DB0 /* Build configuration list for PBXProject "Tutorial04_Instancing" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				41C073B116A44B61A0C92ABA /* Debug */,
+				E36E6AB7FDB24C979F2902A0 /* Release */,
+				6812AD1F47DA472EBEE92144 /* MinSizeRel */,
+				D77846D5D2954C38A9831895 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 4F452BEED4554AB682DDA1DF;
+			projectDirPath = /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing;
+			projectRoot = "";
+			targets = (
+				BEF614FA847ED6605442F7B5 /* ALL_BUILD */,
+				8197567657AFA678F1A62A89 /* Tutorial04_Instancing */,
+				26AEADC49D1AC35FC2218076 /* ZERO_CHECK */,
+				82BDC4F494187AF1C20ED9D0 /* install */,
+				8596AC8F8E411541DCDAE46C /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F218102B97B2FC56B6EC36F /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6BC5835E8EB7198F1A915F1A /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  make -f /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  make -f /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  make -f /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  make -f /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  /usr/local/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  /usr/local/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  /usr/local/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing
+  /usr/local/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CBBBFED1E194F6CB6D9FFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629F4069680E4D749A5C8247 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/DGLogo.png */,
+				822524B771AF4ADA84A2208E /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.psh */,
+				A316EF55D6404D93921790C9 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/assets/cube_inst.vsh */,
+				8FD48AC3EFAC47E091920FFF /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Base.lproj/Main.storyboard */,
+				3D9CE1706B1C465CA8EEEC99 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/AppIcon.appiconset/dg.icns */,
+				56096C93DAF0491092CF8D6F /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/metal-logo.png */,
+				257BE96DA94D419F82950316 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/opengl-logo.png */,
+				080C87D02CC14764B27B62BC /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Data/OSX/Images.xcassets/vulkan-logo.png */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6968767B1A7411EAB2B1F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E67881CF724DC7B177BA8A /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Common/src/TexturedCube.cpp */,
+				F96AAFBD853D417697090496 /* /Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src/Tutorial04_Instancing.cpp */,
+				8B0DD2E4F87D445CB10F166A /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/AppDelegate.m */,
+				40A99F50164B47AB80B4A9A5 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/FullscreenWindow.m */,
+				1A05FD81C1254ED582FDD3B1 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/GLView.mm */,
+				955868C8168746CCBDF44E07 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MVKView.mm */,
+				A28063E971DB4A3F8B1D29A8 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/MetalView.mm */,
+				9C1D418B25FF44B3B4780177 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ModeSelectionViewController.mm */,
+				C064399B9EAE4AE298B495F8 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewBase.mm */,
+				E265062F855E4948AAAAE71E /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/ViewController.mm */,
+				D54E800A43B048A997FFF325 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX/WindowController.mm */,
+				380F645247094296A0058612 /* /Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/main.m */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09A6FF161C544C5BBA77CBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF614FA847ED6605442F7B5 /* ALL_BUILD */;
+			targetProxy = 14D6A71B15F44815A5A18368 /* PBXContainerItemProxy */;
+		};
+		0D5616841314442DB7CE1359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26AEADC49D1AC35FC2218076 /* ZERO_CHECK */;
+			targetProxy = 15F0B587DC604AF6984E4B65 /* PBXContainerItemProxy */;
+		};
+		B158B5F553F94D5C9C65D713 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF614FA847ED6605442F7B5 /* ALL_BUILD */;
+			targetProxy = 59F01B84DA5142829687B20C /* PBXContainerItemProxy */;
+		};
+		BF40F66FF80D4D638C1519F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8197567657AFA678F1A62A89 /* Tutorial04_Instancing */;
+			targetProxy = FEE7EDEED1D94AB29A22CEBD /* PBXContainerItemProxy */;
+		};
+		D41B4E2A869C47D1B9296517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26AEADC49D1AC35FC2218076 /* ZERO_CHECK */;
+			targetProxy = 0FB91A533E69479084A6988C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09EE42FCD1A340B4A8BD2C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		0A3793E74BDE4AA982BDA60A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		28BF102BDA604C1A8DA16632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GL_SILENCE_DEPRECATION,NDEBUG,"'__forceinline=inline'","'PLATFORM_MACOS=1'","'PLATFORM_APPLE=1'","'D3D11_SUPPORTED=0'","'D3D12_SUPPORTED=0'","'GL_SUPPORTED=1'","'GLES_SUPPORTED=0'","'VULKAN_SUPPORTED=1'","'METAL_SUPPORTED=0'","'WEBGPU_SUPPORTED=0'","'DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1'","'ENGINE_DLL=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/src/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/SampleBase/include,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Common/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Apple/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Basic/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Primitives/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsTools/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngine/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/TextureLoader/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/ThirdParty/imgui,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/Imgui/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsAccessories/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineOpenGL/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineVulkan/interface,"$(inherited)");
+				INFOPLIST_FILE = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/Release /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/Release","$(inherited)");
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIE -fvisibility=hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof -Wno-unused-variable -mavx2 '-Wno-error=unguarded-availability-new' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++14' -fPIE -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof -Wno-unused-variable -mavx2 '-Wno-error=unguarded-availability-new' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","-framework OpenGL","-framework CoreVideo","-framework Metal","-framework QuartzCore","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/Release/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/SampleBase/Release/libDiligent-SampleBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/Release/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/TextureLoader/Release/libDiligent-TextureLoader.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libpng/Release/libpng16.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libtiff/Release/libLibTiff.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/Release/libZLib.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libjpeg-9e/Release/libLibJpeg.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/Imgui/Release/libDiligent-Imgui.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsTools/Release/libDiligent-GraphicsTools.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/xxHash/cmake_unofficial/Release/libxxhash.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/Archiver/Release/libDiligent-Archiver-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/Release/libDiligent-GraphicsEngineVk-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineNextGenBase/Release/libDiligent-GraphicsEngineNextGenBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/Release/libDiligent-GraphicsEngineOpenGL-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/Release/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/Release/libDiligent-HLSL2GLSLConverterLib.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/Release/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/Release/libDiligent-HLSL2GLSLConverterLib.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/SPIRV/Release/libSPIRV.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/glslang/Release/libglslang.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/opt/Release/libSPIRV-Tools-opt.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/Release/libSPIRV-Tools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngine/Release/libDiligent-GraphicsEngine.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glew/Release/libglew-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/Release/libspirv-cross-glsl.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/Release/libspirv-cross-core.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsAccessories/Release/libDiligent-GraphicsAccessories.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Common/Release/libDiligent-Common.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Apple/Release/libDiligent-ApplePlatform.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Basic/Release/libDiligent-BasicPlatform.a","-framework AppKit",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/Release/libGraphicsEngineOpenGL.dylib,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/Release/libGraphicsEngineVk.dylib,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Primitives/Release/libDiligent-Primitives.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diligentengine.samples.Tutorial04-Instancing";
+				PRODUCT_NAME = Tutorial04_Instancing;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mews/Documents/repos/DiligentEngine/build/MacOS/build/Tutorial04_Instancing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2AC44AB596A2466D9586C251 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		33F8C7C682444D1E8456A162 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/build;
+			};
+			name = RelWithDebInfo;
+		};
+		3AFCE2D258B14F32B789F158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4150C4E57059412DBEB341AE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		47187D6C4D544B4AA8316E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4AD758142796476C82B43350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/build;
+			};
+			name = Release;
+		};
+		586BACF6B0934C6780A638C2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GL_SILENCE_DEPRECATION,NDEBUG,"'__forceinline=inline'","'PLATFORM_MACOS=1'","'PLATFORM_APPLE=1'","'D3D11_SUPPORTED=0'","'D3D12_SUPPORTED=0'","'GL_SUPPORTED=1'","'GLES_SUPPORTED=0'","'VULKAN_SUPPORTED=1'","'METAL_SUPPORTED=0'","'WEBGPU_SUPPORTED=0'","'DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1'","'ENGINE_DLL=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/src/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/SampleBase/include,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Common/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Apple/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Basic/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Primitives/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsTools/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngine/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/TextureLoader/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/ThirdParty/imgui,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/Imgui/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsAccessories/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineOpenGL/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineVulkan/interface,"$(inherited)");
+				INFOPLIST_FILE = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/MinSizeRel /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/MinSizeRel","$(inherited)");
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIE -fvisibility=hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof -Wno-unused-variable -mavx2 '-Wno-error=unguarded-availability-new' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++14' -fPIE -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof -Wno-unused-variable -mavx2 '-Wno-error=unguarded-availability-new' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","-framework OpenGL","-framework CoreVideo","-framework Metal","-framework QuartzCore","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/MinSizeRel/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/SampleBase/MinSizeRel/libDiligent-SampleBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/MinSizeRel/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/TextureLoader/MinSizeRel/libDiligent-TextureLoader.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libpng/MinSizeRel/libpng16.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libtiff/MinSizeRel/libLibTiff.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/MinSizeRel/libZLib.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libjpeg-9e/MinSizeRel/libLibJpeg.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/Imgui/MinSizeRel/libDiligent-Imgui.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsTools/MinSizeRel/libDiligent-GraphicsTools.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/xxHash/cmake_unofficial/MinSizeRel/libxxhash.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/Archiver/MinSizeRel/libDiligent-Archiver-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/MinSizeRel/libDiligent-GraphicsEngineVk-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineNextGenBase/MinSizeRel/libDiligent-GraphicsEngineNextGenBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/MinSizeRel/libDiligent-GraphicsEngineOpenGL-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/MinSizeRel/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/MinSizeRel/libDiligent-HLSL2GLSLConverterLib.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/MinSizeRel/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/MinSizeRel/libDiligent-HLSL2GLSLConverterLib.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/SPIRV/MinSizeRel/libSPIRV.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/glslang/MinSizeRel/libglslang.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/opt/MinSizeRel/libSPIRV-Tools-opt.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/MinSizeRel/libSPIRV-Tools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngine/MinSizeRel/libDiligent-GraphicsEngine.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glew/MinSizeRel/libglew-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/MinSizeRel/libspirv-cross-glsl.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/MinSizeRel/libspirv-cross-core.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsAccessories/MinSizeRel/libDiligent-GraphicsAccessories.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Common/MinSizeRel/libDiligent-Common.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Apple/MinSizeRel/libDiligent-ApplePlatform.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Basic/MinSizeRel/libDiligent-BasicPlatform.a","-framework AppKit",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/MinSizeRel/libGraphicsEngineOpenGL.dylib,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/MinSizeRel/libGraphicsEngineVk.dylib,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Primitives/MinSizeRel/libDiligent-Primitives.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diligentengine.samples.Tutorial04-Instancing";
+				PRODUCT_NAME = Tutorial04_Instancing;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mews/Documents/repos/DiligentEngine/build/MacOS/build/Tutorial04_Instancing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6376DA6050994DE5A8D9D926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		647A1D451C164731A15C44A2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GL_SILENCE_DEPRECATION,NDEBUG,"'__forceinline=inline'","'PLATFORM_MACOS=1'","'PLATFORM_APPLE=1'","'D3D11_SUPPORTED=0'","'D3D12_SUPPORTED=0'","'GL_SUPPORTED=1'","'GLES_SUPPORTED=0'","'VULKAN_SUPPORTED=1'","'METAL_SUPPORTED=0'","'WEBGPU_SUPPORTED=0'","'DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1'","'ENGINE_DLL=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/src/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/SampleBase/include,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Common/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Apple/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Basic/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Primitives/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsTools/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngine/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/TextureLoader/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/ThirdParty/imgui,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/Imgui/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsAccessories/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineOpenGL/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineVulkan/interface,"$(inherited)");
+				INFOPLIST_FILE = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/RelWithDebInfo /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/RelWithDebInfo","$(inherited)");
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIE -fvisibility=hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof -Wno-unused-variable -mavx2 '-Wno-error=unguarded-availability-new' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++14' -fPIE -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof -Wno-unused-variable -mavx2 '-Wno-error=unguarded-availability-new' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","-framework OpenGL","-framework CoreVideo","-framework Metal","-framework QuartzCore","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/RelWithDebInfo/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/SampleBase/RelWithDebInfo/libDiligent-SampleBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/RelWithDebInfo/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/TextureLoader/RelWithDebInfo/libDiligent-TextureLoader.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libpng/RelWithDebInfo/libpng16.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libtiff/RelWithDebInfo/libLibTiff.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/RelWithDebInfo/libZLib.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libjpeg-9e/RelWithDebInfo/libLibJpeg.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/Imgui/RelWithDebInfo/libDiligent-Imgui.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsTools/RelWithDebInfo/libDiligent-GraphicsTools.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/xxHash/cmake_unofficial/RelWithDebInfo/libxxhash.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/Archiver/RelWithDebInfo/libDiligent-Archiver-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/RelWithDebInfo/libDiligent-GraphicsEngineVk-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineNextGenBase/RelWithDebInfo/libDiligent-GraphicsEngineNextGenBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/RelWithDebInfo/libDiligent-GraphicsEngineOpenGL-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/RelWithDebInfo/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/RelWithDebInfo/libDiligent-HLSL2GLSLConverterLib.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/RelWithDebInfo/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/RelWithDebInfo/libDiligent-HLSL2GLSLConverterLib.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/SPIRV/RelWithDebInfo/libSPIRV.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/glslang/RelWithDebInfo/libglslang.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/opt/RelWithDebInfo/libSPIRV-Tools-opt.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/RelWithDebInfo/libSPIRV-Tools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngine/RelWithDebInfo/libDiligent-GraphicsEngine.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glew/RelWithDebInfo/libglew-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/RelWithDebInfo/libspirv-cross-glsl.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/RelWithDebInfo/libspirv-cross-core.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsAccessories/RelWithDebInfo/libDiligent-GraphicsAccessories.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Common/RelWithDebInfo/libDiligent-Common.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Apple/RelWithDebInfo/libDiligent-ApplePlatform.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Basic/RelWithDebInfo/libDiligent-BasicPlatform.a","-framework AppKit",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/RelWithDebInfo/libGraphicsEngineOpenGL.dylib,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/RelWithDebInfo/libGraphicsEngineVk.dylib,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Primitives/RelWithDebInfo/libDiligent-Primitives.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diligentengine.samples.Tutorial04-Instancing";
+				PRODUCT_NAME = Tutorial04_Instancing;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mews/Documents/repos/DiligentEngine/build/MacOS/build/Tutorial04_Instancing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		67D411195C9743D5916E5C9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GL_SILENCE_DEPRECATION,_DEBUG,DEBUG,"'__forceinline=inline'","'PLATFORM_MACOS=1'","'PLATFORM_APPLE=1'","'D3D11_SUPPORTED=0'","'D3D12_SUPPORTED=0'","'GL_SUPPORTED=1'","'GLES_SUPPORTED=0'","'VULKAN_SUPPORTED=1'","'METAL_SUPPORTED=0'","'WEBGPU_SUPPORTED=0'",DILIGENT_DEVELOPMENT,DILIGENT_DEBUG,"'DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1'","'ENGINE_DLL=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/Apple/Source/Classes/OSX,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial04_Instancing/src,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/src/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/NativeApp/include/MacOS,/Users/mews/Documents/repos/DiligentEngine/DiligentSamples/SampleBase/include,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Common/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Apple/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/Basic/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Primitives/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Platforms/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsTools/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngine/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/TextureLoader/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/ThirdParty/imgui,/Users/mews/Documents/repos/DiligentEngine/DiligentTools/Imgui/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsAccessories/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineOpenGL/interface,/Users/mews/Documents/repos/DiligentEngine/DiligentCore/Graphics/GraphicsEngineVulkan/interface,"$(inherited)");
+				INFOPLIST_FILE = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/Tutorials/Tutorial04_Instancing/CMakeFiles/Tutorial04_Instancing.dir/Info.plist;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/Debug /Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/Debug","$(inherited)");
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIE -fvisibility=hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof '-Wno-error=unguarded-availability-new' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++14' -fPIE -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wuninitialized -Wconditional-uninitialized -Wextra-tokens -Wpointer-arith -Wloop-analysis -Wunused -Wno-overloaded-virtual -Wno-incompatible-pointer-types-discards-qualifiers -Wno-unknown-pragmas -Wno-zero-as-null-pointer-constant -Wno-unused-parameter -Wno-invalid-offsetof '-Wno-error=unguarded-availability-new' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","-framework OpenGL","-framework CoreVideo","-framework Metal","-framework QuartzCore","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/Debug/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentSamples/SampleBase/Debug/libDiligent-SampleBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/NativeApp/Debug/libDiligent-NativeAppBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/TextureLoader/Debug/libDiligent-TextureLoader.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libpng/Debug/libpng16d.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libtiff/Debug/libLibTiff.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/Debug/libZLib.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/ThirdParty/libjpeg-9e/Debug/libLibJpeg.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentTools/Imgui/Debug/libDiligent-Imgui.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsTools/Debug/libDiligent-GraphicsTools.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/xxHash/cmake_unofficial/Debug/libxxhash.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/Archiver/Debug/libDiligent-Archiver-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/Debug/libDiligent-GraphicsEngineVk-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineNextGenBase/Debug/libDiligent-GraphicsEngineNextGenBase.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/Debug/libDiligent-GraphicsEngineOpenGL-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/Debug/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/Debug/libDiligent-HLSL2GLSLConverterLib.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/ShaderTools/Debug/libDiligent-ShaderTools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/HLSL2GLSLConverterLib/Debug/libDiligent-HLSL2GLSLConverterLib.a",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/SPIRV/Debug/libSPIRV.a,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glslang/glslang/Debug/libglslang.a,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/opt/Debug/libSPIRV-Tools-opt.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Tools/source/Debug/libSPIRV-Tools.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngine/Debug/libDiligent-GraphicsEngine.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/glew/Debug/libglew-static.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/Debug/libspirv-cross-glsl.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/ThirdParty/SPIRV-Cross/Debug/libspirv-cross-core.a","-framework OpenGL","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsAccessories/Debug/libDiligent-GraphicsAccessories.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Common/Debug/libDiligent-Common.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Apple/Debug/libDiligent-ApplePlatform.a","/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Platforms/Basic/Debug/libDiligent-BasicPlatform.a","-framework AppKit",/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineOpenGL/Debug/libGraphicsEngineOpenGL.dylib,/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Graphics/GraphicsEngineVulkan/Debug/libGraphicsEngineVk.dylib,"/Users/mews/Documents/repos/DiligentEngine/build/MacOS/DiligentCore/Primitives/Debug/libDiligent-Primitives.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diligentengine.samples.Tutorial04-Instancing";
+				PRODUCT_NAME = Tutorial04_Instancing;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mews/Documents/repos/DiligentEngine/build/MacOS/build/Tutorial04_Instancing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		73AC04DE31C440ECB9CA799A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		75E992527C784EAF986F686B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7A2AB5B9AA134E118E5EC620 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9B529A67C89344D5B0EEE8BD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A159DCE1035D4EEAB89CC930 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AC936840FE7E44F18D6A02BB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/build;
+			};
+			name = MinSizeRel;
+		};
+		B8B7B1F74C554D7EB6E6C969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SYMROOT = /Users/mews/Documents/repos/DiligentEngine/build/MacOS/build;
+			};
+			name = Debug;
+		};
+		D2C454AA32974BADBFE901EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E90E0FF75C3F471DB0DE868A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F18E1555B6B346528F417D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F6ADE20876B84703AB063D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FC660D8D23A43A3B38DBD76 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EE42FCD1A340B4A8BD2C0E /* Debug */,
+				3AFCE2D258B14F32B789F158 /* Release */,
+				A159DCE1035D4EEAB89CC930 /* MinSizeRel */,
+				E90E0FF75C3F471DB0DE868A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		16603D4F431F4ED8A7DA1B75 /* Build configuration list for PBXNativeTarget "Tutorial04_Instancing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67D411195C9743D5916E5C9B /* Debug */,
+				28BF102BDA604C1A8DA16632 /* Release */,
+				586BACF6B0934C6780A638C2 /* MinSizeRel */,
+				647A1D451C164731A15C44A2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5499FC28D42B42E4AF74A05B /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6376DA6050994DE5A8D9D926 /* Debug */,
+				F18E1555B6B346528F417D82 /* Release */,
+				73AC04DE31C440ECB9CA799A /* MinSizeRel */,
+				4150C4E57059412DBEB341AE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8FB5BF223DD9407BAC6B4A42 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C454AA32974BADBFE901EC /* Debug */,
+				75E992527C784EAF986F686B /* Release */,
+				2AC44AB596A2466D9586C251 /* MinSizeRel */,
+				7A2AB5B9AA134E118E5EC620 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A85D3CD26AA64E84A9359793 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6ADE20876B84703AB063D62 /* Debug */,
+				47187D6C4D544B4AA8316E32 /* Release */,
+				9B529A67C89344D5B0EEE8BD /* MinSizeRel */,
+				0A3793E74BDE4AA982BDA60A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A8DBECDC0A5E45C29DA43DB0 /* Build configuration list for PBXProject "Tutorial04_Instancing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B7B1F74C554D7EB6E6C969 /* Debug */,
+				4AD758142796476C82B43350 /* Release */,
+				AC936840FE7E44F18D6A02BB /* MinSizeRel */,
+				33F8C7C682444D1E8456A162 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D13B54A5D2A9449591BEA2D3 /* Project object */;
+}
